@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VD SERVICES</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #222;
+            scroll-behavior: smooth;
+        }
+
+        section {
+            height: 100vh;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1, h2, h3, p {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        .btn {
+            background-color: #0057b8;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            align-self: flex-end;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1579389083078-4e7018379f7e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            color: white;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+        }
+
+        .hero img {
+            width: 100px;
+            margin-bottom: 30px;
+        }
+
+        .services, .advantages, .process {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .services div, .advantages div, .process div {
+            flex: 1;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+        }
+
+        input, textarea {
+            padding: 15px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: #0057b8;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #f3f3f3;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. Écran Principal -->
+<section class="hero" id="accueil">
+    VD SERVICES
+    <h1>VD SERVICES</h1>
+    <h2>Experts en Conseil Technique, Support Informatique et Solutions d’Impression.  
+        Nous accompagnons les entreprises dans la gestion efficace de leurs infrastructures techniques.</h2>
+    <a href="#contact" class="btn">Nous contacter</a>
+</section>
+
+<!-- 2. À Propos -->
+<section style="background-color: #f7f7f7;" id="about">
+    <h2>Qui sommes-nous ?</h2>
+    <p>
+        VD SERVICES est une société basée à Grasse, spécialisée dans l’assistance informatique, le conseil technique et les services d’impression. 
+        Nous intervenons auprès des PME, professions libérales et structures locales pour optimiser leur environnement numérique.
+        Notre mission est de garantir un fonctionnement fluide, sécurisé et économique des systèmes informatiques de nos clients.
+    </p>
+</section>
+
+<!-- 3. Nos Solutions -->
+<section id="services">
+    <h2>Ce que nous faisons</h2>
+    <div class="services">
+        <div>
+            <h3>Conseil Technique</h3>
+            <p>
+                Analyse de votre infrastructure actuelle, recommandations d’optimisation, choix technologiques adaptés à vos besoins et votre budget.
+            </p>
+        </div>
+        <div>
+            <h3>Support Informatique</h3>
+            <p>
+                Assistance quotidienne, gestion des pannes, mises à jour, sécurité des données et maintenance proactive de vos équipements.
+            </p>
+        </div>
+        <div>
+            <h3>Solutions d’Impression</h3>
+            <p>
+                Installation, configuration et maintenance d’équipements d’impression professionnels. Fourniture de consommables et assistance rapide.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Pourquoi Nous ? -->
+<section style="background-color: #f7f7f7;" id="avantages">
+    <h2>Ce qui nous rend différents</h2>
+    <div class="advantages">
+        <div>
+            <h3>Approche Personnalisée</h3>
+            <p>
+                Chaque client est unique. Nous adaptons nos services à vos objectifs et contraintes opérationnelles.
+            </p>
+        </div>
+        <div>
+            <h3>Réactivité Garantie</h3>
+            <p>
+                Intervention rapide en cas d’incident. Nos clients bénéficient d’un accompagnement constant.
+            </p>
+        </div>
+        <div>
+            <h3>Expertise Multidisciplinaire</h3>
+            <p>
+                Nous combinons compétences en informatique, conseil et impression pour un service global et cohérent.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Notre Méthode -->
+<section id="process">
+    <h2>Notre façon de travailler</h2>
+    <div class="process">
+        <div>
+            <h3>1. Évaluation</h3>
+            <p>
+                Nous commençons par une analyse complète de vos besoins et de votre environnement technique.
+            </p>
+        </div>
+        <div>
+            <h3>2. Mise en œuvre</h3>
+            <p>
+                Déploiement des solutions retenues avec accompagnement pas-à-pas et documentation claire.
+            </p>
+        </div>
+        <div>
+            <h3>3. Suivi & Support</h3>
+            <p>
+                Une fois en place, nous restons à vos côtés pour l’entretien, l’assistance et l’évolution continue.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Contactez-nous -->
+<section style="background-color: #f7f7f7;" id="contact">
+    <h2>Discutons ensemble</h2>
+    <form>
+        <input type="text" placeholder="Votre nom complet" required>
+        <input type="email" placeholder="Votre adresse e-mail" required>
+        <textarea placeholder="Votre message..." rows="5" required></textarea>
+        <input type="submit" value="Envoyer le message">
+    </form>
+</section>
+
+<!-- 7. Coordonnées -->
+<section style="background-color: #222; color: white;" id="coordonnees">
+    <h2>Entrons en contact</h2>
+    <p>
+        Vous avez un projet, un besoin urgent ou souhaitez simplement des conseils ?  
+        Écrivez-nous et un membre de notre équipe vous répondra dans les plus brefs délais.
+    </p>
+    <br>
+    <p><strong>Adresse :</strong> 82 Boulevard Louis Icard, 06130 Grasse, Provence-Alpes-Côte d’Azur</p>
+    <p><strong>Email :</strong> <a href="mailto:info@vdservices.org" style="color: #4fa3ff;">info@vdservices.org</a></p>
+</section>
+
+</body>
+</html>
